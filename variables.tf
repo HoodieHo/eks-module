@@ -212,6 +212,7 @@ variable "addon_configs" {
   description = <<EOD
   Additional configuration for EKS Addons. Check addon schema to verify available options.
   e.g.
+  ```
   {
     vpc-cni = {
       nodeSelector = {
@@ -219,6 +220,7 @@ variable "addon_configs" {
       }
     }
   }
+  ```
 EOD
   default     = {}
 }
@@ -234,6 +236,7 @@ variable "app_roles" {
   description = <<EOD
   Application roles for pods to use.
   Example:
+  ```
   app_roles = {
     hello = {
       permissions = [
@@ -246,5 +249,6 @@ variable "app_roles" {
       serviceaccount = app
     }
   }
+  ```
 EOD
 }
